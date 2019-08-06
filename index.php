@@ -1,14 +1,9 @@
 <?php
 
-	use App\Application;
+use App\Route;
 
-	$autoload = function($class){
-		include($class.'.php');
-	};
+require_once "vendor/autoload.php";
 
-	spl_autoload_register($autoload);
-
-	$app = new Application();
-	$app->execute();
+$route = new Route;
 
 ?>

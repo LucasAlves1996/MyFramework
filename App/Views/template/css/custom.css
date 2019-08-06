@@ -12,7 +12,7 @@ button{
 /* Class */
 .navbar{
     box-shadow: 0 1px 3px rgba(0,0,0,.11);
-	background-color: #212326;
+	background-color: rgb(38, 41, 45);
 	line-height: 40px;
 	padding: 0;
 }
@@ -107,10 +107,10 @@ button{
     border: 2px solid rgb(60,60,60);
 	width: 52px;
     height: 40px;
-	padding: 4px 8px;
+	padding: 0;
     outline: none;
     float: right;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-right: 10px;
 }
 
@@ -327,7 +327,7 @@ button{
         width: 47px;
         height: 37px;
 		padding: 0px 0px 0px 0px;
-		margin: 18px 20px 0px 0px;
+		margin: 18px 25px 0px 0px;
     }
 
     #divLogo{

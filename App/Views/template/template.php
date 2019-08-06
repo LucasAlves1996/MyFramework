@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title><?php echo $title ?></title>
+    <title><?= $this->view->dados['title'] ?></title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,13 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="Template/css/custom.css">
+    <link rel="stylesheet" href="App/Views/template/css/custom.css">
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
         <div id="divLogo">
-          <a class="logo" href="home"><img src="imgs/logo.png" id="logo" alt="Logotipo"></a>
+          <a class="logo" href=""><img src="App/Views/template/files/imgs/logo.png" id="logo" alt="Logotipo"></a>
           <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation" id="bt-menu">
           <span class="navbar-toggler-icon" id="bt-menu-icon"></span>
@@ -25,23 +25,23 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="home" id="nav-link">Início<span class="sr-only"></span></a>
+              <a class="nav-link" href="" id="nav-link">Link 1<span class="sr-only"></span></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">O que fazemos</a>
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Link 2</a>
               <div class="dropdown-menu" aria-labelledby="dropdownId">
-                <a class="nav-link" href="#" id="submenu-item">Auditoria</a>
-                <a class="nav-link" href="#" id="submenu-item">Consultoria</a>
-                <a class="nav-link" href="#" id="submenu-item">Perícia contabil</a>
-                <a class="nav-link" href="#" id="submenu-item">Assessoria</a>
-                <a class="nav-link" href="#" id="submenu-item">Tecnologia da informação</a>
+                <a class="nav-link" href="" id="submenu-item">Link 2.1</a>
+                <a class="nav-link" href="" id="submenu-item">Link 2.2</a>
+                <a class="nav-link" href="" id="submenu-item">Link 2.3</a>
+                <a class="nav-link" href="" id="submenu-item">Link 2.4</a>
+                <a class="nav-link" href="" id="submenu-item">Link 2.5</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contato" id="nav-link">Contato<span class="sr-only"></span></a>
+              <a class="nav-link" href="" id="nav-link">Link 3<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login" id="nav-link">Entrar<span class="sr-only"></span></a>
+              <a class="nav-link" href="" id="nav-link">Link 4<span class="sr-only"></span></a>
             </li>
           </ul>
         </div>
@@ -49,7 +49,7 @@
     </header>
 
     <section>
-        <?php include "Views/$content"; ?>
+        <?= $this->content() ?>
     </section>
     
     <footer>
