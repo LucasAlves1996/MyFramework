@@ -11,18 +11,23 @@ abstract class Action
         $this->view = new \stdClass();
     }
 
-    protected function render($view)
+    protected function render($view, $template)
     {
-        $this->view->content = $view;
-        require_once "App/Views/template/template.php";
+        if($template)
+        {
+            $this->view->content = $view;
+            require_once "template/template.php";    
+        }
+        else
+        {
+            $this->view->content = $view;
+            $this->content();
+        }
     }
 
     protected function content()
     {
-        $classAtual = get_class($this);
-        $classAtual = str_replace('App\\Controllers\\', '', $classAtual);
-        $classAtual = strtolower(str_replace('Controller', '', $classAtual));
-        require_once "App/Views/".$classAtual."/".$this->view->content.".php";
+        require_once "App/Views/".$this->view->content.".php";
     }
 }
 

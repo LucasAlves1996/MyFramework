@@ -8,14 +8,13 @@ class Route extends AppLaunch
 {
     protected function initRoutes()
     {
-        /* Default code for route creation */
         $routes['home'] = array(
             'path' => '/',
-            'controller' => 'RoutesController',
-            'action' => 'home'
+            'controller' => 'HomeController',
+            'action' => 'index'
         );
 
-        /* You can create new routes here following the same pattern as above code */
+        
 
         $this->setRoutes($routes);
     }

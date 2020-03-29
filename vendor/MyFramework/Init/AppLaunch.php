@@ -39,9 +39,9 @@ abstract class AppLaunch
                 return 0;
             }
         }
-        $errorClass = "App\Controllers\RoutesController";
+        $errorClass = "App\Controllers\ErrorController";
         $error = new $errorClass;
-        $error->error('Page not found!');
+        $error->pageNotFound();
     }
 
     protected function getUrl()
