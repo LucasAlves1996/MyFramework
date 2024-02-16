@@ -136,6 +136,14 @@ button{
     height: 91px;
 }
 
+.form1{
+    width: calc(100% - 50px);
+    margin: 25px;
+    padding: 20px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px;
+}
+
 @media(max-width: 1226px) {
     /* Class */
     .especialidades{
